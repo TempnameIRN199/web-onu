@@ -1,0 +1,37 @@
+div {
+    margin: 10px;
+    border: 1px solid #000;
+    font-size: 24px;
+    height: 80px;
+}
+
+#header {
+    background-color: #ccc;
+}
+
+#sidebar {
+    background-color: #bbb;
+    float: right;
+    width: 150px;
+}
+
+#main {
+    background-color: #fafafa;
+    height: 200px;
+    margin-right: 170px;
+}
+
+#menu {
+    background-color: #ddd;
+    float: left;
+    width: 160px;
+}
+
+#content {
+    background-color: #eee;
+    margin-left: 180px;
+}
+
+#footer {
+    background-color: #ccc;
+}
