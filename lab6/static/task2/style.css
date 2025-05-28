@@ -1,0 +1,33 @@
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    height: 5.5em;
+    border: 3px solid black;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-item {
+    text-align: center;
+    font-size: 110%;
+    color: white;
+    padding: 0.5em;
+}
+.color1 {
+    background-color: #70AEED;
+}
+
+.color2 {
+    background-color: #D5D5E3;
+}
+
+.color3 {
+    background-color: #E14068;
+}

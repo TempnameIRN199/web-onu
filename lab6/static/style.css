@@ -1,0 +1,57 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid grey;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.flex-item {
+    text-align: center;
+    font-size: 110%;
+    color: black;
+    padding: 2em;
+    flex: 1 1 100%;
+    border: 1px solid black;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .flex-item {
+        flex: 1;
+    }
+}
+
+h3 {
+    text-align: center;
+    font-size: 200%;
+    color: black;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    color: black;
+    border: none;
+}
+
+.btn1 {
+    background-color: #04AA6D;
+}
+
+.btn2 {
+    background-color: #f44336;
+}
+
+.btn3 {
+    background-color: #008CBA;
+}
+
+.btn4 {
+    background-color: #e7e7e7;
+}

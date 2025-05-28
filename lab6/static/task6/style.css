@@ -1,0 +1,44 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 7em;
+    border: 3px solid black;
+}
+
+.flex-item {
+    padding: 0.7em;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+
+.item1 {
+    align-self: stretch;
+    background-color: #B8C6D1;
+}
+
+.item2 {
+    align-self: center;
+    background-color: #70AEED;
+}
+
+.item3 {
+    align-self: flex-start;
+    background-color: #70E393;
+}
+
+.item4 {
+    align-self: flex-end;
+    background-color: #E14068;
+}
+
+.item5 {
+    align-self: baseline;
+    background-color: #A62E5C;
+}
+
+.item6 {
+    align-self: auto;
+    background-color: #88A404;
+}

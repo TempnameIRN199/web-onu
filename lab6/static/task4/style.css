@@ -1,0 +1,46 @@
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    border: 3px solid black;
+}
+
+.flex-item {
+    /*стиль flex-елемента */
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8em;
+    color: white;
+}
+
+.group1 {
+    order: -1;
+}
+
+.group2 {
+    order: 1;
+}
+
+.color1 {
+    background-color: #70AEED;
+}
+
+.color2 {
+    background-color: #D5D5E3;
+}
+
+.color3 {
+    background-color: #E14068;
+}
+
+.color4 {
+    background-color: #DEBFAF;
+}
+
+.color5 {
+    background-color: #A62E5C;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+}
