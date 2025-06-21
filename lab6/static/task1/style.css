@@ -1,14 +1,11 @@
 .flex-container {
     display: flex;
-    border: 3px solid grey;
+    border: 3px solid black;
 }
 
-.row {
-    flex-direction: row;
-}
-
-.row-reverse {
-    flex-direction: row-reverse;
+.inline-flex-container {
+    display: inline-flex;
+    border: 3px solid black;
 }
 
 .flex-item {
