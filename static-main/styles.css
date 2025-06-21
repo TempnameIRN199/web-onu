@@ -7,39 +7,62 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #fff;
+    background: black;
+    color: white;
 }
 
 .main {
     text-align: center;
 }
 
-.lab-links h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
-.lab-links ul {
-    list-style: none;
-    padding: 0;
+.image-container img {
+  width: 100%;
+  display: block;
 }
 
-.lab-links ul li {
-    margin: 10px 0;
+.image-container.faded::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  mix-blend-mode: saturation;
+  pointer-events: none;
+  z-index: 1;
 }
 
-.lab-links ul li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #007bff;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+.transition-block {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), black 80%);
+  z-index: 10;
+  color: white;
 }
 
-.lab-links ul li a:hover {
-    color: #0056b3;
-    transform: scale(1.1);
+.transition-block h1,
+.transition-block p,
+.transition-block button {
+  position: relative;
+  z-index: 3;
+}
+
+.transition-block button {
+  padding: 10px 20px;
+  background-color: #ffffff22;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  backdrop-filter: blur(4px);
 }
 
 footer {
@@ -48,7 +71,56 @@ footer {
     width: 100%;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    color: #333;
-    background-color: #fff;
+    color: #aaa4a4;
+    background-color: #000000;
     font-size: 0.9rem;
+}
+
+/*----------------------------*/
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: -1;
+  animation: noiseMove 0.2s linear infinite alternate-reverse;
+  background-image: url('img/noise.png');
+  background-repeat: center center;
+  background-size: cover;
+  background-position: 0 0;
+  opacity: 15%;
+}
+
+@keyframes noiseMove {
+    0% {
+      background-position: 100px 100px;
+    }
+    100% {
+      background-position: -100px -100px;
+    }
+}
+
+ul li a:hover::before {
+    opacity: 0.2;
 }
