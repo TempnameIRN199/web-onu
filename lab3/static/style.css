@@ -1,76 +1,97 @@
-/*------------------Main element view-------------------*/
+/* ------------------ Основні стилі сторінки ------------------ */
+
+/* Встановлюємо базовий шрифт, фон і розмір тексту */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #f4f4f4;
-    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; /* Класичний шрифт */
+    background-color: #f4f4f4;                    /* Світло-сірий фон */
+    font-size: 20px;                              /* Розмір шрифту */
 }
 
+/* Контейнер для вмісту сторінки */
 .container {
-    width: 80%;
-    margin: auto;
-    padding: 10px;
+    width: 80%;           /* Ширина 80% від вікна */
+    margin: auto;         /* Центрування по горизонталі */
+    padding: 10px;        /* Внутрішні відступи */
 }
 
+/* Основна секція, що містить меню, основний блок і сайдбар */
 .content {
-    display: flex;
+    display: flex;        /* Гнучке розташування елементів по горизонталі */
 }
 
+/* ------------------ Верхній та нижній блоки ------------------ */
+
+/* Шапка і підвал сторінки */
 .header, .footer {
-    background-color: #ccc;
-    text-align: center;
-    padding: 10px;
+    background-color: #ccc;  /* Сірий фон */
+    text-align: center;      /* Центрування тексту */
+    padding: 10px;           /* Внутрішній відступ */
 }
 
+/* ------------------ Ліве меню ------------------ */
+
+/* Блок меню зліва */
 .menu {
-    background-color: #ddd;
-    width: 20%;
-    padding: 10px;
-    float: left;
+    background-color: #ddd;  /* Світло-сірий фон */
+    width: 20%;              /* Ширина 20% */
+    padding: 10px;           /* Внутрішній відступ */
+    float: left;             /* Розміщення зліва */
 }
 
+/* ------------------ Основний вміст ------------------ */
+
+/* Основний центральний блок сторінки */
 .main {
-    text-align: center;
-    background-color: #fafafa;
-    width: 60%;
-    padding: 10px;
-    font-size: 24px;
+    text-align: center;      /* Центрування тексту */
+    background-color: #fafafa; /* Дуже світлий фон */
+    width: 60%;              /* Ширина 60% */
+    padding: 10px;           /* Внутрішній відступ */
+    font-size: 24px;         /* Збільшений шрифт */
 }
 
+/* ------------------ Правий сайдбар ------------------ */
+
+/* Додатковий блок праворуч */
 .sidebar {
-    width: 20%;
-    padding: 10px;
-    background-color: #bbb;
-    float: right;
+    width: 20%;              /* Ширина 20% */
+    padding: 10px;           /* Внутрішній відступ */
+    background-color: #bbb;  /* Темно-сірий фон */
+    float: right;            /* Розміщення справа */
 }
 
-/*------------------Menu view-------------------*/
+/* ------------------ Оформлення меню ------------------ */
 
+/* Стиль для пунктів перенаправлення (наприклад, посилань у меню) */
 .redirect {
-    font-weight: bold;
-    font-style: italic;
-    margin-left: 10px;
+    font-weight: bold;       /* Жирний шрифт */
+    font-style: italic;      /* Курсив */
+    margin-left: 10px;       /* Відступ зліва */
 }
 
+/* Вкладені списки в пунктах меню */
 li ul {
-    margin-left: 10px;
+    margin-left: 10px;       /* Відступ зліва */
 }
 
+/* Загальні стилі списків */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none;   /* Прибираємо маркери списку */
+    padding: 0;              /* Відсутність внутрішніх відступів */
 }
 
-/*------------------Media view-------------------*/
+/* ------------------ Мультимедіа ------------------ */
 
-.main img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-top: auto;
+/* Зображення в основному блоці */
+.main img {
+    max-width: 100%;         /* Адаптивна ширина */
+    height: auto;            /* Пропорційна висота */
+    display: block;          /* Відображення як блок */
+    margin-top: auto;        /* Автоматичний верхній відступ */
 }
 
+/* Відео в основному блоці */
 .main video {
-    max-width: 100%;
-    height: auto;
-    margin-top: auto;
+    max-width: 100%;         /* Адаптивна ширина */
+    height: auto;            /* Пропорційна висота */
+    margin-top: auto;        /* Автоматичний верхній відступ */
 }
